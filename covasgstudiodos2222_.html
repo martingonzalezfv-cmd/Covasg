@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covasgstudio | Diseño y desarrollo de páginas web</title>
+    <meta
+      name="description"
+      content="Creamos páginas web modernas, profesionales y con enfoque comercial para marcas que quieren crecer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="covasgstudioestilo.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="brand" data-key="brand">Covasgstudio</div>
+        <div class="nav-right">
+          <a class="nav-btn" href="#contacto" data-key="navContact">Contáctanos</a>
+          <select id="lang-select" class="lang-select" aria-label="Seleccionar idioma">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </select>
+          <button
+            id="reveal-ethic"
+            type="button"
+            class="ethic-btn"
+            data-key="ethicShow"
+            aria-pressed="false"
+            aria-label="Mostrar frase ética"
+          >
+            Mostrar
+          </button>
+        </div>
+      </nav>
+
+      <video id="hero-video" class="hero-video" autoplay muted loop playsinline poster="media/landscape-poster.jpg">
+        <source src="media/landscape.mp4" type="video/mp4" />
+        Tu navegador no soporta video.
+      </video>
+      <div class="video-overlay" aria-hidden="true"></div>
+
+      <div class="wave-wrap" aria-hidden="true">
+        <svg class="sine-wave" viewBox="0 0 1200 200" preserveAspectRatio="none">
+          <path class="wave w1" d="M0 100 C 150 10 350 190 600 100 C 850 10 1050 190 1200 100 V200 H0 Z" />
+          <path class="wave w2" d="M0 100 C 150 30 350 170 600 100 C 850 30 1050 170 1200 100 V200 H0 Z" />
+        </svg>
+      </div>
+      <div class="ball"></div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow" data-key="heroEyebrow">Diseño web profesional</p>
+          <h1 data-key="heroH1">Transformamos tu idea en una web que vende.</h1>
+          <p class="hero-description" data-key="heroDesc">
+            Creamos páginas web atractivas, rápidas y estratégicas para negocios,
+            emprendedores y marcas que desean destacar en línea.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:covasgstudio@gmail.com" data-key="btnProposal">Solicitar propuesta</a>
+            <a class="btn btn-secondary" href="#servicios" data-key="btnServices">Ver servicios</a>
+          </div>
+        </div>
+
+        <div class="hero-card float">
+          <h3 data-key="whyTitle">¿Por qué elegirnos?</h3>
+          <ul>
+            <li data-key="why1">Diseño moderno y profesional</li>
+            <li data-key="why2">Optimizado para móviles</li>
+            <li data-key="why3">Enfoque en conversión y ventas</li>
+            <li data-key="why4">Soporte y mantenimiento continuo</li>
+            <li>Más de 10 años de experiencia</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="servicios">
+        <div class="section-heading">
+          <p class="eyebrow" data-key="servicesEyebrow">Nuestros servicios</p>
+          <h2 data-key="servicesH2">Soluciones digitales pensadas para crecer</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3 data-key="card1Title">Landing Pages</h3>
+            <p data-key="card1Desc">Diseños atractivos y enfocados en captar clientes y generar acciones.</p>
+          </article>
+          <article class="card">
+            <h3 data-key="card2Title">Tiendas online</h3>
+            <p data-key="card2Desc">Plataformas intuitivas que hacen que tus productos se vean profesionales y confiables.</p>
+          </article>
+          <article class="card">
+            <h3 data-key="card3Title">Páginas corporativas</h3>
+            <p data-key="card3Desc">Presencia digital sólida para empresas que buscan proyectar autoridad y confianza.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about">
+        <div>
+          <p class="eyebrow" data-key="aboutEyebrow">Sobre Covasgstudio</p>
+          <h2 data-key="aboutH2">Tu aliado para una imagen digital impecable</h2>
+          <p data-key="aboutDesc">
+            Nos especializamos en crear experiencias web modernas, elegantes y funcionales.
+            Cada proyecto se desarrolla con una estética profesional, una estructura clara y un
+            enfoque orientado a resultados.
+          </p>
+        </div>
+        <div class="stats">
+          <div>
+            <strong>+20</strong>
+            <span>Proyectos pensados para el crecimiento</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Diseño adaptable y profesional</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+      <h2 data-key="footerH2">Contáctanos hoy</h2>
+      <p data-key="footerP">Haz que tu negocio destaque con una web profesional y efectiva.</p>
+      <div class="contact-list">
+        <a href="mailto:covasgstudio@gmail.com">covasgstudio@gmail.com</a>
+        <a href="tel:+59392650541">092 650 541</a>
+      </div>
+    </footer>
+
+    <div class="hidden-phrase" data-key="ethicPhrase">Es la rama de la filosofía que estudia lo que está bien y lo que está mal, y guía el comportamiento para actuar de forma correcta y responsable.
+</div>
+
+    <script>
+      (function () {
+        const translations = {
+          brand: { es: 'Covasgstudio', en: 'Covasgstudio' },
+          navContact: { es: 'Contáctanos', en: 'Contact' },
+          heroEyebrow: { es: 'Diseño web profesional', en: 'Professional web design' },
+          heroH1: { es: 'Transformamos tu idea en una web que vende.', en: 'We turn your idea into a website that sells.' },
+          heroDesc: { es: 'Creamos páginas web atractivas, rápidas y estratégicas para negocios, emprendedores y marcas que desean destacar en línea.', en: 'We create attractive, fast, strategic websites for businesses, entrepreneurs and brands that want to stand out online.' },
+          btnProposal: { es: 'Solicitar propuesta', en: 'Request proposal' },
+          btnServices: { es: 'Ver servicios', en: 'View services' },
+          whyTitle: { es: '¿Por qué elegirnos?', en: 'Why choose us?' },
+          why1: { es: 'Diseño moderno y profesional', en: 'Modern, professional design' },
+          why2: { es: 'Optimizado para móviles', en: 'Mobile-optimized' },
+          why3: { es: 'Enfoque en conversión y ventas', en: 'Conversion and sales focused' },
+          why4: { es: 'Soporte y mantenimiento continuo', en: 'Ongoing support and maintenance' },
+          servicesEyebrow: { es: 'Nuestros servicios', en: 'Our services' },
+          servicesH2: { es: 'Soluciones digitales pensadas para crecer', en: 'Digital solutions built to grow' },
+          card1Title: { es: 'Landing Pages', en: 'Landing Pages' },
+          card1Desc: { es: 'Diseños atractivos y enfocados en captar clientes y generar acciones.', en: 'Attractive designs focused on capturing customers and driving action.' },
+          card2Title: { es: 'Tiendas online', en: 'Online stores' },
+          card2Desc: { es: 'Plataformas intuitivas que hacen que tus productos se vean profesionales y confiables.', en: 'Intuitive platforms that make your products look professional and trustworthy.' },
+          card3Title: { es: 'Páginas corporativas', en: 'Corporate websites' },
+          card3Desc: { es: 'Presencia digital sólida para empresas que buscan proyectar autoridad y confianza.', en: 'Solid digital presence for companies looking to project authority and trust.' },
+          aboutEyebrow: { es: 'Sobre Covasgstudio', en: 'About Covasgstudio' },
+          aboutH2: { es: 'Tu aliado para una imagen digital impecable', en: 'Your ally for a flawless digital image' },
+          aboutDesc: { es: 'Nos especializamos en crear experiencias web modernas, elegantes y funcionales. Cada proyecto se desarrolla con una estética profesional, una estructura clara y un enfoque orientado a resultados.', en: 'We specialize in creating modern, elegant and functional web experiences. Each project is developed with professional aesthetics, clear structure and a results-oriented focus.' },
+          footerH2: { es: 'Contáctanos hoy', en: 'Contact us today' },
+          footerP: { es: 'Haz que tu negocio destaque con una web profesional y efectiva.', en: 'Make your business stand out with a professional, effective website.' },
+          ethicPhrase: { es: 'Es la rama de la filosofía que estudia lo que está bien y lo que está mal, y guía el comportamiento para actuar de forma correcta y responsable.', en: 'It is the branch of philosophy that studies what is right and wrong, and guides behavior so people act correctly and responsibly.' },
+          ethicShow: { es: 'Mostrar frase ética', en: 'Show ethics phrase' },
+          ethicHide: { es: 'Ocultar frase ética', en: 'Hide ethics phrase' }
+        };
+
+        function setLang(lang) {
+          document.querySelectorAll('[data-key]').forEach(function (el) {
+            const key = el.getAttribute('data-key');
+            if (translations[key] && translations[key][lang]) {
+              el.textContent = translations[key][lang];
+            }
+          });
+          document.documentElement.lang = lang;
+          localStorage.setItem('covasg_lang', lang);
+        }
+
+        const select = document.getElementById('lang-select');
+        const saved = localStorage.getItem('covasg_lang') || 'es';
+        if (select) {
+          select.value = saved;
+          select.addEventListener('change', function (e) {
+            setLang(e.target.value);
+          });
+        }
+
+        const revealBtn = document.getElementById('reveal-ethic');
+        const hiddenPhrase = document.querySelector('.hidden-phrase');
+        let ethicsTimer = null;
+
+        function setButtonText(el, text) {
+          if (!el) return;
+          el.innerHTML = '';
+          for (let i = 0; i < text.length; i += 1) {
+            const ch = text[i];
+            const span = document.createElement('span');
+            span.className = 'g-letter';
+            span.textContent = ch;
+            span.style.display = 'inline-block';
+            span.style.animationDelay = (i * 45) + 'ms';
+            el.appendChild(span);
+          }
+        }
+
+        function updateRevealText() {
+          if (!revealBtn) return;
+          const isVisible = hiddenPhrase && hiddenPhrase.classList.contains('visible-phrase');
+          const key = isVisible ? 'ethicHide' : 'ethicShow';
+          const txt = (translations[key] && translations[key][document.documentElement.lang]) ? translations[key][document.documentElement.lang] : '';
+          setButtonText(revealBtn, txt);
+          revealBtn.setAttribute('aria-pressed', isVisible);
+        }
+
+        function showEthicsPhrase() {
+          if (!hiddenPhrase) return;
+          hiddenPhrase.classList.add('visible-phrase');
+          updateRevealText();
+          if (ethicsTimer) clearTimeout(ethicsTimer);
+          ethicsTimer = setTimeout(function () {
+            hiddenPhrase.classList.remove('visible-phrase');
+            updateRevealText();
+          }, 15000);
+        }
+
+        function hideEthicsPhrase() {
+          if (!hiddenPhrase) return;
+          hiddenPhrase.classList.remove('visible-phrase');
+          if (ethicsTimer) clearTimeout(ethicsTimer);
+          ethicsTimer = null;
+          updateRevealText();
+        }
+
+        if (revealBtn) {
+          revealBtn.addEventListener('click', function () {
+            if (!hiddenPhrase) return;
+            if (hiddenPhrase.classList.contains('visible-phrase')) {
+              hideEthicsPhrase();
+            } else {
+              showEthicsPhrase();
+            }
+          });
+        }
+
+        document.addEventListener('keydown', function (e) {
+          const key = e.key.toLowerCase();
+          if ((e.ctrlKey || e.metaKey) && key === 'e') {
+            e.preventDefault();
+            if (!hiddenPhrase) return;
+            if (hiddenPhrase.classList.contains('visible-phrase')) {
+              hideEthicsPhrase();
+            } else {
+              showEthicsPhrase();
+            }
+          }
+        });
+
+        setLang(saved);
+        updateRevealText();
+      })();
+    </script>
+  </body>
+</html>
